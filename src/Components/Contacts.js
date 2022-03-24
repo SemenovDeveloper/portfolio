@@ -1,15 +1,8 @@
 import React from "react";
 
-function Contacts(props) {
-  function rotate () {
-    const element = document.getElementById("contacts");
-    element.classList.add("rotate-contacts")
-  }
-
+function Contacts () {
   return (
-    <div id="contacts" className="static-contacts" onClick={props.onClick}>
-      <h1>contacts</h1>
-    </div>
+    <div>Contacts</div>
   )
 }
 

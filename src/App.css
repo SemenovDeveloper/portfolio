@@ -28,8 +28,9 @@ h1 {
   transition: transform 1s linear;
   transform-style: preserve-3D;
   color: #7d4acf;
+  color: #28c028;
   transform-origin: bottom left;
-  transform: rotate(-90deg); }
+  transform: rotate(0deg); }
 
 .static-projects {
   position: absolute;
@@ -46,6 +47,14 @@ h1 {
   transform-origin: bottom right;
   transform: rotate(-90deg); }
 
+.rotate-back-projects {
+  transition: transform 1s linear;
+  transform-style: preserve-3D;
+  color: #7d4acf;
+  color: #28c028;
+  transform-origin: bottom right;
+  transform: rotate(0deg); }
+
 .static-skills {
   position: absolute;
   margin: 20px;
@@ -60,6 +69,14 @@ h1 {
   color: #7d4acf;
   transform-origin: top left;
   transform: rotate(-90deg); }
+
+.rotate-back-skills {
+  transition: transform 1s linear;
+  transform-style: preserve-3D;
+  color: #7d4acf;
+  color: #28c028;
+  transform-origin: top left;
+  transform: rotate(0deg); }
 
 .static-contacts {
   position: absolute;
@@ -81,7 +98,8 @@ h1 {
   transform-style: preserve-3D;
   color: #7d4acf;
   transform-origin: top right;
-  transform: rotate(-90deg); }
+  color: #28c028;
+  transform: rotate(0deg); }
 
 #content {
   position: absolute;

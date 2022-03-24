@@ -39,8 +39,9 @@ h1{
 
 .rotate-back-about {
   @include rotate;
+  color:rgb(40, 192, 40);
   transform-origin: bottom left;
-  transform: rotate(-90deg);
+  transform: rotate(0deg);
 }
 
 .static-projects {
@@ -56,6 +57,13 @@ h1{
   transform: rotate(-90deg);
 }
 
+.rotate-back-projects {
+  @include rotate;
+  color:rgb(40, 192, 40);
+  transform-origin: bottom right;
+  transform: rotate(0deg);
+}
+
 .static-skills {
   @include static;
   bottom: 0%;
@@ -66,6 +74,13 @@ h1{
   @include rotate;
   transform-origin: top left;
   transform: rotate(-90deg);
+}
+
+.rotate-back-skills {
+  @include rotate;
+  color:rgb(40, 192, 40);
+  transform-origin: top left;
+  transform: rotate(0deg);
 }
 
 .static-contacts {
@@ -83,7 +98,8 @@ h1{
 .rotate-back-contacts {
   @include rotate;
   transform-origin: top right;
-  transform: rotate(-90deg);
+  color:rgb(40, 192, 40);
+  transform: rotate(0deg);
 }
 
 #content {

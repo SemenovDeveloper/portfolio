@@ -1,15 +1,8 @@
 import React from "react";
 
-function Projects() {
-  function rotate () {
-    const element = document.getElementById("projects");
-    element.classList.add("rotate-projects")
-  }
-
+function Projects () {
   return (
-    <div id="projects" className="static-projects" onClick={rotate}>
-      <h1>projects</h1>
-    </div>
+    <div>Projects</div>
   )
 }
 
