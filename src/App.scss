@@ -1,13 +1,14 @@
 @mixin static {
   position: absolute;
   margin: 20px;
-  width: 190px;
   height: 50px; 
+  cursor: pointer;
 }
 
 @mixin rotate {
   transition: transform 1s linear;  
   transform-style: preserve-3D;
+  color: rgb(125, 74, 207);
 }
 
 *{
@@ -21,11 +22,13 @@ body {
 }
 
 h1{
-  font-size: 2.5rem;
+  font-size: 2.75rem;
 }
 
 .static-about {
-  @include static
+  @include static;
+  top: 0%;
+  left: 0%;
 }
 
 .rotate-about {
@@ -34,8 +37,15 @@ h1{
   transform: rotate(90deg);
 }
 
+.rotate-back-about {
+  @include rotate;
+  transform-origin: bottom left;
+  transform: rotate(-90deg);
+}
+
 .static-projects {
   @include static;
+  top: 0%;
   right: 0%;
 }
 
@@ -68,4 +78,19 @@ h1{
   @include rotate;
   transform-origin: top right;
   transform: rotate(90deg);
+}
+
+.rotate-back-contacts {
+  @include rotate;
+  transform-origin: top right;
+  transform: rotate(-90deg);
+}
+
+#content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-size: 3rem;
+  color:red;
+  transform: translateX(-50%) translateY(-50%);
 }

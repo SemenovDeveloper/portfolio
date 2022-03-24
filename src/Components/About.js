@@ -1,14 +1,14 @@
 import React from "react";
 
-function About() {
-  function rotate () {
-    const element = document.getElementById("about-me");
-    element.classList.add("rotate-about")
-  }
+function About(props) {
+  // function rotate () {
+  //   const element = document.getElementById("about-me");
+  //   element.classList.add("rotate-about");
+  // }
 
   return (
-    <div id="about-me" className="static-about" onClick={rotate}>
-      <h1>About me</h1>
+    <div id="about" className="static-about" onClick={props.onClick}>
+      <h1>about me</h1>
     </div>
   )
 }

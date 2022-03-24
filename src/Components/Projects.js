@@ -8,7 +8,7 @@ function Projects() {
 
   return (
     <div id="projects" className="static-projects" onClick={rotate}>
-      <h1>Projects</h1>
+      <h1>projects</h1>
     </div>
   )
 }
