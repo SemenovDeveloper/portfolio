@@ -1,19 +1,22 @@
+a {
+  font-size: 1.75vw; }
+
 * {
   box-sizing: border-box;
   margin: 0px;
   padding: 0px; }
 
-body {
-  color: #28c028; }
-
 .static-about {
   position: absolute;
   margin: 20px;
   cursor: pointer;
-  z-index: 999;
-  font-size: 1.75vw;
+  z-index: 5;
+  color: #28c028;
   top: 0%;
   left: 0%; }
+  .static-about a {
+    font-size: 4vw;
+    font-weight: 700; }
 
 .rotate-about {
   transition: transform 0.5s linear;
@@ -34,10 +37,13 @@ body {
   position: absolute;
   margin: 20px;
   cursor: pointer;
-  z-index: 999;
-  font-size: 1.75vw;
+  z-index: 5;
+  color: #28c028;
   top: 0%;
   right: 0%; }
+  .static-projects a {
+    font-size: 4vw;
+    font-weight: 700; }
 
 .rotate-projects {
   transition: transform 0.5s linear;
@@ -58,10 +64,13 @@ body {
   position: absolute;
   margin: 20px;
   cursor: pointer;
-  z-index: 999;
-  font-size: 1.75vw;
+  z-index: 5;
+  color: #28c028;
   bottom: 0%;
   left: 0%; }
+  .static-skills a {
+    font-size: 4vw;
+    font-weight: 700; }
 
 .rotate-skills {
   transition: transform 0.5s linear;
@@ -82,10 +91,13 @@ body {
   position: absolute;
   margin: 20px;
   cursor: pointer;
-  z-index: 999;
-  font-size: 1.75vw;
+  z-index: 5;
+  color: #28c028;
   bottom: 0%;
   right: 0%; }
+  .static-contacts a {
+    font-size: 4vw;
+    font-weight: 700; }
 
 .rotate-contacts {
   transition: transform 0.5s linear;
@@ -109,3 +121,22 @@ body {
   left: 20%;
   font-size: 2rem;
   color: black; }
+
+#projects-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid red; }
+
+#project-items {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 30px; }
+
+.project {
+  width: 300px;
+  height: 240px;
+  border: 1px solid blue; }
+  .project h4 {
+    font-size: 2rem; }

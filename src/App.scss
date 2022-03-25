@@ -2,8 +2,12 @@
   position: absolute;
   margin: 20px;
   cursor: pointer;
-  z-index: 999;
-  font-size: 1.75vw;
+  z-index: 5;
+  color:rgb(40, 192, 40);
+  a {
+    font-size: 4vw;
+    font-weight: 700;
+  }
 }
 
 @mixin rotate {
@@ -12,19 +16,15 @@
   color: rgb(125, 74, 207);
 }
 
+a {
+  font-size: 1.75vw;
+}
+
 *{
   box-sizing: border-box;
   margin: 0px;
   padding: 0px;
 }
-
-body {
-  color: rgb(40, 192, 40);
-}
-
-// h1{
-//   font-size: 2.75rem;
-// }
 
 .static-about {
   @include static;
@@ -50,7 +50,6 @@ body {
   top: 0%;
   right: 0%;
 }
-
 
 .rotate-projects {
   @include rotate;
@@ -110,4 +109,27 @@ body {
   left: 20%;
   font-size: 2rem;
   color:rgb(0, 0, 0);
+}
+
+#projects-wrapper{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid red;
+}
+
+#project-items {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 30px;
+}
+
+.project {
+  width: 300px;
+  height: 240px;
+  border: 1px solid blue;
+  h4{
+    font-size: 2rem;
+  }
 }
