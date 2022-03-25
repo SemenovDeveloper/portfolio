@@ -8,7 +8,7 @@ function ContactsBtn(props) {
 
   return (
     <div id="contacts" className="static-contacts" onClick={props.onClick}>
-      <h1>contacts</h1>
+      <a>contacts</a>
     </div>
   )
 }
