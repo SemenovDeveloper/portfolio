@@ -45,9 +45,7 @@ function App() {
             ? <Projects />
             : content === "skills"
               ? <Skills />
-              : content === "contacts"
-                ? <Contacts />
-                : null
+              : <Contacts />
       }</div>
     </div>
   );

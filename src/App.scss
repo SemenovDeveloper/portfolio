@@ -1,12 +1,13 @@
 @mixin static {
   position: absolute;
   margin: 20px;
-  height: 50px; 
   cursor: pointer;
+  z-index: 999;
+  font-size: 1.75vw;
 }
 
 @mixin rotate {
-  transition: transform 1s linear;  
+  transition: transform 0.5s linear;  
   transform-style: preserve-3D;
   color: rgb(125, 74, 207);
 }
@@ -21,9 +22,9 @@ body {
   color: rgb(40, 192, 40);
 }
 
-h1{
-  font-size: 2.75rem;
-}
+// h1{
+//   font-size: 2.75rem;
+// }
 
 .static-about {
   @include static;
@@ -104,9 +105,9 @@ h1{
 
 #content {
   position: absolute;
-  top: 50%;
-  left: 50%;
-  font-size: 3rem;
-  color:red;
-  transform: translateX(-50%) translateY(-50%);
+  top: 20%;
+  right: 20%;
+  left: 20%;
+  font-size: 2rem;
+  color:rgb(0, 0, 0);
 }
