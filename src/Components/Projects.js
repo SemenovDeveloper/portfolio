@@ -9,25 +9,29 @@ function Projects () {
       src: require("../assets/images/clock.png"),
       href: "https://semenovdeveloper.github.io/pomodoro-clock/"
     },
-    calculator: {
-      name: 'Calculator',
-      id: "calculator",
-      src: require("../assets/images/calculator.png")
-    },
     drums: {
       name: 'Drum Machine',
       id: "drum-machine",
-      src: require("../assets/images/drum-machine.png")
+      src: require("../assets/images/drum-machine.png"),
+      href: "https://semenovdeveloper.github.io/drum-machine/"
+    },
+    calculator: {
+      name: 'Calculator',
+      id: "calculator",
+      src: require("../assets/images/calculator.png"),
+      href: "https://semenovdeveloper.github.io/calculator-js/"
     },
     marckdownPreviewer: {
       name: 'Marckdown Previewer',
       id: "marckdown-previewer",
-      src: require("../assets/images/marckdown-previewer.png")
+      src: require("../assets/images/marckdown-previewer.png"),
+      href: "https://semenovdeveloper.github.io/react-marckdown-previewer/"
     },
     randomQuote: {
       name: 'Random Quote Machine',
       id: "random-quotemachine",
-      src: require("../assets/images/random-quote.png")
+      src: require("../assets/images/random-quote.png"),
+      href: "https://semenovdeveloper.github.io/random-quote-machine-js/"
     }
   }
 
@@ -45,21 +49,25 @@ function Projects () {
           id={projectData.drums.id}
           name={projectData.drums.name}
           src={projectData.drums.src}
+          href={projectData.drums.href}
         />
         <Project 
           id={projectData.calculator.id}
           name={projectData.calculator.name}
           src={projectData.calculator.src}
+          href={projectData.calculator.href}
         />
         <Project 
           id={projectData.marckdownPreviewer.id}
           name={projectData.marckdownPreviewer.name}
           src={projectData.marckdownPreviewer.src}
+          href={projectData.marckdownPreviewer.href}
         />
         <Project 
           id={projectData.randomQuote.id}
           name={projectData.randomQuote.name}
           src={projectData.randomQuote.src}
+          href={projectData.randomQuote.href}
         />
       </div>
     </div>
