@@ -1,6 +1,3 @@
-a {
-  font-size: 1.75vw; }
-
 * {
   box-sizing: border-box;
   margin: 0px;
@@ -15,7 +12,7 @@ a {
   top: 0%;
   left: 0%; }
   .static-about a {
-    font-size: 4vw;
+    font-size: 3.5vw;
     font-weight: 700; }
 
 .rotate-about {
@@ -42,7 +39,7 @@ a {
   top: 0%;
   right: 0%; }
   .static-projects a {
-    font-size: 4vw;
+    font-size: 3.5vw;
     font-weight: 700; }
 
 .rotate-projects {
@@ -69,7 +66,7 @@ a {
   bottom: 0%;
   left: 0%; }
   .static-skills a {
-    font-size: 4vw;
+    font-size: 3.5vw;
     font-weight: 700; }
 
 .rotate-skills {
@@ -96,7 +93,7 @@ a {
   bottom: 0%;
   right: 0%; }
   .static-contacts a {
-    font-size: 4vw;
+    font-size: 3.5vw;
     font-weight: 700; }
 
 .rotate-contacts {
@@ -116,9 +113,9 @@ a {
 
 #content {
   position: absolute;
-  top: 20%;
-  right: 20%;
-  left: 20%;
+  top: 16%;
+  right: 16%;
+  left: 16%;
   font-size: 2rem;
   color: black; }
 
@@ -126,17 +123,53 @@ a {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
-  border: 2px solid red; }
+  align-items: center; }
 
 #project-items {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  margin: 30px; }
+  max-width: 932px;
+  margin: 0 auto;
+  background-color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  overflow: hidden; }
 
-.project {
-  width: 300px;
-  height: 240px;
-  border: 1px solid blue; }
-  .project h4 {
-    font-size: 2rem; }
+.project-item {
+  background-color: transparent;
+  width: 400px;
+  height: 400px;
+  margin: 50px 5px;
+  perspective: 1000px; }
+
+.project-item-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); }
+
+.project-item:hover .project-item-inner {
+  transform: rotateY(180deg); }
+
+.project-item-front, .project-item-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden; }
+
+.project-item-front {
+  background-color: #bbb;
+  color: #413636; }
+
+.project-item-back {
+  background-color: #00be56;
+  color: white;
+  transform: rotateY(180deg); }

@@ -4,7 +4,7 @@ function ProjectsBtn(props) {
   
   return (
     <div id="projects" className="static-projects" onClick={props.onClick}>
-      <h1>projects</h1>
+      <a>projects</a>
     </div>
   )
 }
