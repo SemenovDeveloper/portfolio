@@ -6,7 +6,8 @@ function Projects () {
     clock: {
       name: 'Pomodoro Clock',
       id: "pomodoro-clock",
-      src: require("../assets/images/clock.png")
+      src: require("../assets/images/clock.png"),
+      href: "https://semenovdeveloper.github.io/pomodoro-clock/"
     },
     calculator: {
       name: 'Calculator',
@@ -38,6 +39,7 @@ function Projects () {
           id={projectData.clock.id}
           name={projectData.clock.name}
           src={projectData.clock.src}
+          href={projectData.clock.href}
         />
         <Project 
           id={projectData.calculator.id}
