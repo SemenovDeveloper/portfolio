@@ -42,14 +42,14 @@ function Projects () {
           href={projectData.clock.href}
         />
         <Project 
-          id={projectData.calculator.id}
-          name={projectData.calculator.name}
-          src={projectData.calculator.src}
-        />
-        <Project 
           id={projectData.drums.id}
           name={projectData.drums.name}
           src={projectData.drums.src}
+        />
+        <Project 
+          id={projectData.calculator.id}
+          name={projectData.calculator.name}
+          src={projectData.calculator.src}
         />
         <Project 
           id={projectData.marckdownPreviewer.id}
