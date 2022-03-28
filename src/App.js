@@ -18,8 +18,8 @@ function App() {
     setContent(value);
   }
 
+  // Change styling and position of the active button and return inactive buttons to default
   useEffect(() => {
-    // Change styling and position of the active button and return inactive buttons to default
     const navButton = document.getElementById(content);
     const pervNavButton = document.getElementById(pervContent);
     if (pervContent === "") {
