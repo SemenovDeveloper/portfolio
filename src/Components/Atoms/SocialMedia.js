@@ -1,12 +1,23 @@
 import React from "react";
 
-function SocialMedia({socialNetwork}) {  
-  console.log(socialNetwork.id);
+function SocialMedia({ socialNetwork }) {
+
+  function rotateBorder(command) {
+    const border = document.getElementById(socialNetwork.id);
+    if (command === "rotate") {
+      border.classList.add("rotate-social-media");
+    } else {
+      border.classList.remove("rotate-social-media")
+    }
+  }
+
   return (
-    <div className={socialNetwork.id}>
-      <div className="spinning-social-media">
-        <i className={socialNetwork.icon}></i>
-      </div>
+    <div className="social-media" onMouseOver={() => rotateBorder("rotate")}
+    onMouseLeave={() => rotateBorder()}>
+      <div id={socialNetwork.id} className="spinning-social-media"></div>
+      <i 
+        className={socialNetwork.icon}        
+      ></i>
     </div>
   );
 }
