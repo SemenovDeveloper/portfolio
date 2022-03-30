@@ -219,3 +219,26 @@ i {
 .rotate-social-media {
   transform: rotate(180deg);
 }
+.skills-page-wrapper{
+  width: 65vw;
+}
+
+.skill-wrapper {
+  height: 120px;
+  width: 120px;
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid grey;
+  p {
+    font-size: 1.25rem;
+  }
+}
+
+.skills-bar{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}

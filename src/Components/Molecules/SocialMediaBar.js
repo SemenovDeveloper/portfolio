@@ -23,20 +23,21 @@ function SocialMediaBar() {
       icon: "fa-brands fa-free-code-camp",
       href: "https://www.freecodecamp.org/alexandersemenov"
     },
-    stackOverflow: {
-      id: "stackoverflow",
-      icon: "fa-brands fa-stack-overflow",
-      href: "https://stackoverflow.com/users/17095736/semenovufo"
+    linkedin: {
+      id: "linkedin",
+      icon: "fa-brands fa-linkedin",
+      href: "https://www.linkedin.com/in/semenov-dev/"
     },
   }
   
   return (
     <div id="social-media-bar">
+      <SocialMedia socialNetwork={socialMediaData.linkedin}/>      
       <SocialMedia socialNetwork={socialMediaData.gitHub}/>
       <SocialMedia socialNetwork={socialMediaData.vk}/>
       <SocialMedia socialNetwork={socialMediaData.codePen}/>
       <SocialMedia socialNetwork={socialMediaData.freeCodeCamp}/>
-      <SocialMedia socialNetwork={socialMediaData.stackOverflow}/>
+      
     </div>
   )
 }
