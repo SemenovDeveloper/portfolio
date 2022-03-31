@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
 * {
   box-sizing: border-box;
   margin: 0px;
@@ -5,6 +7,7 @@
 }
 
 body {
+  font-family: 'Poppins', sans-serif;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -127,6 +130,7 @@ body {
   padding: 100px 0;
   font-size: 2rem;
   line-height: 3.5rem;
+  text-align: center;
 }
 
 #projects-wrapper {
@@ -244,11 +248,17 @@ i {
 
 #skills-page-wrapper {
   max-width: 800px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .skills-bar{
-  margin: 25px;
+  margin: 25px 0px;
+  border: 2px solid #00be56;
   display: flex;
+  justify-content: space-evenly;
   flex-direction: row;
   flex-wrap: wrap;
 }
