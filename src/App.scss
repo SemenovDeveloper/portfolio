@@ -99,10 +99,15 @@
 }
 
 #content {
-  position: absolute;
-  top: 16%;
-  right: 16%;
-  left: 16%;
+  margin-top: 20vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  // position: absolute;
+  // top: 20%;
+  // right: 50%;
+  // transform: translateX(-50%), translateY(-50%);
   font-size: 2rem;
   color: rgb(0, 0, 0);
 }
@@ -219,26 +224,43 @@ i {
 .rotate-social-media {
   transform: rotate(180deg);
 }
-.skills-page-wrapper{
-  width: 65vw;
+
+#skills-page-wrapper {
+  width: 800px;
+}
+
+.skills-bar{
+  margin: 25px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 
 .skill-wrapper {
   height: 120px;
   width: 120px;
-  margin: 10px;
+  margin: 14px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  background-color: rgb(231, 231, 231);
   border: 2px solid grey;
+  border-radius: 4px;
+  color: grey;
+  -webkit-transition: all 0.2s linear;
+  -moz-transition: all 0.2s linear;
+  -o-transition: all 0.2s linear;
+  transition: all 0.2s linear;
   p {
     font-size: 1.25rem;
   }
 }
 
-.skills-bar{
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+.skill-wrapper:hover {
+  color:rgb(0, 0, 0);
+  transform: scale(1.3);
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
+
