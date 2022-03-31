@@ -44,7 +44,7 @@ function Projects() {
 
   return (
     <div id="projects-wrapper">
-      <h2>Projects</h2>
+      <h2>A selection of stuff i've built</h2>
       <div id="project-items">
         <Project project={projectsData.clock} />
         <Project project={projectsData.drums} />
