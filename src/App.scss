@@ -195,6 +195,11 @@ body {
   backface-visibility: hidden;
 }
 
+.project-item-front {
+  outline: 4px solid $almond;
+  outline-offset: -4px;
+}
+
 .project-item-back {
   background-color: $almond;
   color: $black;

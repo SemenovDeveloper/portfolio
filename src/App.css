@@ -184,6 +184,10 @@ body {
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden; }
 
+.project-item-front {
+  outline: 4px solid #f1e3d3;
+  outline-offset: -4px; }
+
 .project-item-back {
   background-color: #f1e3d3;
   color: #302e2e;
