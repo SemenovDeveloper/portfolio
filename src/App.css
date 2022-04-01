@@ -21,7 +21,7 @@ body {
   top: 0%;
   left: 0%; }
   .static-about a {
-    font-size: 3.5vw;
+    font-size: 3.25vw;
     font-weight: 700; }
 
 .rotate-about {
@@ -48,7 +48,7 @@ body {
   top: 0%;
   right: 0%; }
   .static-projects a {
-    font-size: 3.5vw;
+    font-size: 3.25vw;
     font-weight: 700; }
 
 .rotate-projects {
@@ -75,7 +75,7 @@ body {
   bottom: 0%;
   left: 0%; }
   .static-skills a {
-    font-size: 3.5vw;
+    font-size: 3.25vw;
     font-weight: 700; }
 
 .rotate-skills {
@@ -102,7 +102,7 @@ body {
   bottom: 0%;
   right: 0%; }
   .static-contacts a {
-    font-size: 3.5vw;
+    font-size: 3.25vw;
     font-weight: 700; }
 
 .rotate-contacts {
