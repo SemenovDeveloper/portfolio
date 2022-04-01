@@ -1,4 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Work+Sans&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans&display=swap");
+
+$peach: #d88c9a;
+$orange: #f2d0a9;
+$almond: #f1e3d3;
+$opal: #99c1b9;
+$purple: #8e7dbe;
+$white: #ffffff;
+$black: rgb(48, 46, 46);
 
 * {
   box-sizing: border-box;
@@ -7,7 +15,7 @@
 }
 
 body {
-  font-family: 'Work Sans', sans-serif;
+  font-family: "Work Sans", sans-serif;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -21,7 +29,6 @@ body {
   margin: 20px;
   cursor: pointer;
   z-index: 5;
-  color: rgb(40, 192, 40);
   a {
     font-size: 3.5vw;
     font-weight: 700;
@@ -31,11 +38,12 @@ body {
 @mixin rotate {
   transition: transform 0.5s linear;
   transform-style: preserve-3D;
-  color: rgb(125, 74, 207);
+  color: $white;
 }
 
 .static-about {
   @include static;
+  color: $orange;
   top: 0%;
   left: 0%;
 }
@@ -48,13 +56,14 @@ body {
 
 .rotate-back-about {
   @include rotate;
-  color: rgb(40, 192, 40);
+  color: $orange;
   transform-origin: bottom left;
   transform: rotate(0deg);
 }
 
 .static-projects {
   @include static;
+  color: $opal;
   top: 0%;
   right: 0%;
 }
@@ -67,13 +76,14 @@ body {
 
 .rotate-back-projects {
   @include rotate;
-  color: rgb(40, 192, 40);
+  color: $opal;
   transform-origin: bottom right;
   transform: rotate(0deg);
 }
 
 .static-skills {
   @include static;
+  color: $peach;
   bottom: 0%;
   left: 0%;
 }
@@ -86,13 +96,14 @@ body {
 
 .rotate-back-skills {
   @include rotate;
-  color: rgb(40, 192, 40);
+  color: $peach;
   transform-origin: top left;
   transform: rotate(0deg);
 }
 
 .static-contacts {
   @include static;
+  color: $purple;
   bottom: 0%;
   right: 0%;
 }
@@ -106,7 +117,7 @@ body {
 .rotate-back-contacts {
   @include rotate;
   transform-origin: top right;
-  color: rgb(40, 192, 40);
+  color: $purple;
   transform: rotate(0deg);
 }
 // navbar block end
@@ -120,14 +131,15 @@ body {
   justify-content: center;
   align-items: center;
   font-size: 2rem;
-  color: rgb(0, 0, 0);
+  color: $almond;
 }
 
 #about-me-wrapper {
   padding: 100px 0;
-  font-size: 2rem;
+  font-size: 2.5rem;
   line-height: 3.5rem;
   text-align: center;
+  color: $black;
 }
 
 #projects-wrapper {
@@ -140,7 +152,6 @@ body {
 #project-items {
   max-width: 932px;
   margin: 0 auto;
-  background-color: #fff;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -166,7 +177,7 @@ body {
   width: 100%;
   height: 100%;
   text-align: center;
-  transition: transform 0.6s;
+  transition: all 0.6s;
   transform-style: preserve-3d;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
@@ -184,20 +195,14 @@ body {
   backface-visibility: hidden;
 }
 
-.project-item-front {
-  background-color: #bbb;
-  color: rgb(65, 54, 54);
-}
-
 .project-item-back {
-  background-color: #00be56;
-  color: white;
+  background-color: $almond;
+  color: $black;
   transform: rotateY(180deg);
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-
 }
 
 #skills-page-wrapper {
@@ -206,9 +211,10 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  color: $black;
 }
 
-.skills-bar{
+.skills-bar {
   margin: 25px 0px;
   display: flex;
   justify-content: space-evenly;
@@ -238,27 +244,34 @@ body {
 }
 
 .skill-wrapper:hover {
-  color:rgb(0, 0, 0);
+  color: rgb(0, 0, 0);
   transform: scale(1.3);
   background-color: white;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
-#contacts-page{
+#contacts-page {
   padding: 100px 0;
   font-size: 2rem;
   line-height: 3.5rem;
+  color: $almond;
   text-align: center;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  hr {
+    width: 50%;
+    height: 4px;
+    color: $almond;
+    background-color: $almond;
+  }
 }
 
 #social-media-bar {
   width: 60%;
   height: 60px;
-  background-color: #d4eedf;
+  background-color: $purple;
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
@@ -274,7 +287,7 @@ body {
     top: 50%;
     left: 50%;
     font-size: 32px;
-    color: rgb(21, 22, 43);
+    color: $almond;
     transform: translateX(-50%) translateY(-50%);
     border-radius: 50%;
     background-color: transparent;
@@ -282,13 +295,17 @@ body {
   }
 }
 
+.social-media:hover {
+  cursor: pointer;
+}
+
 .spinning-social-media {
   width: 50px;
   height: 50px;
   background-color: transparent;
-  border: 5px solid rgba(29, 161, 242, 0.2);
-  border-left-color: rgb(21, 22, 43);
-  border-right-color: rgb(21, 22, 43);
+  border: 5px solid $purple;
+  border-left-color: $almond;
+  border-right-color: $almond;
   border-radius: 50%;
   display: flex;
   justify-content: center;

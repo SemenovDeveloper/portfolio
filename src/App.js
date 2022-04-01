@@ -18,6 +18,23 @@ function App() {
     setContent(value);
   }
 
+  //Change body backround color when page content is changed
+  useEffect(() => {
+    switch (content) {
+      case "about":
+        document.body.style.backgroundColor = "#F2D0A9"; // orange color
+        break;
+      case "projects":
+        document.body.style.backgroundColor = "#99C1B9"; // opal color
+        break;
+      case "skills":
+        document.body.style.backgroundColor = "#D88C9A"; // peach color
+        break;
+      case "contacts":
+        document.body.style.backgroundColor = "#8E7DBE"; // purple color
+    }
+  }, [content])
+
   // Change styling and position of the active button and return inactive buttons to default
   useEffect(() => {
     const navButton = document.getElementById(content);
