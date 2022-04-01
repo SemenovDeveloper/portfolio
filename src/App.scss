@@ -121,7 +121,6 @@ body {
   align-items: center;
   font-size: 2rem;
   color: rgb(0, 0, 0);
-  border: 2px solid red;
 }
 
 #about-me-wrapper {
@@ -194,6 +193,11 @@ body {
   background-color: #00be56;
   color: white;
   transform: rotateY(180deg);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
 }
 
 #skills-page-wrapper {
@@ -206,7 +210,6 @@ body {
 
 .skills-bar{
   margin: 25px 0px;
-  border: 2px solid #00be56;
   display: flex;
   justify-content: space-evenly;
   flex-direction: row;

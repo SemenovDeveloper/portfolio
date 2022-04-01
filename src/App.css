@@ -128,8 +128,7 @@ body {
   justify-content: center;
   align-items: center;
   font-size: 2rem;
-  color: black;
-  border: 2px solid red; }
+  color: black; }
 
 #about-me-wrapper {
   padding: 100px 0;
@@ -192,7 +191,11 @@ body {
 .project-item-back {
   background-color: #00be56;
   color: white;
-  transform: rotateY(180deg); }
+  transform: rotateY(180deg);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
 
 #skills-page-wrapper {
   max-width: 800px;
@@ -203,7 +206,6 @@ body {
 
 .skills-bar {
   margin: 25px 0px;
-  border: 2px solid #00be56;
   display: flex;
   justify-content: space-evenly;
   flex-direction: row;
