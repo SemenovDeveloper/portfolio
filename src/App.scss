@@ -124,7 +124,7 @@ body {
 
 // content block start
 #content {
-  margin-top: 20vh;
+  margin-top: 15vh;
   max-width: 840px;
   display: flex;
   flex-direction: column;
@@ -135,7 +135,7 @@ body {
 }
 
 #about-me-wrapper {
-  padding: 100px 0;
+  padding-top: 10vh;
   font-size: 2.5rem;
   line-height: 3.5rem;
   text-align: center;
@@ -323,5 +323,13 @@ body {
 .rotate-social-media {
   transform: rotate(180deg);
 }
-
 // content block end
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  #project-items{
+    transform: scale(0.8);
+  } 
+  #skills-page-wrapper{
+    max-width: 640px;
+  }
+}
