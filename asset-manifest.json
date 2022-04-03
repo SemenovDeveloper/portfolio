@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/portfolio/static/css/main.1e411780.css",
+    "main.js": "/portfolio/static/js/main.a431a17c.js",
+    "static/js/787.1ed0c42c.chunk.js": "/portfolio/static/js/787.1ed0c42c.chunk.js",
+    "static/media/drum-machine.png": "/portfolio/static/media/drum-machine.011fbe6d188a834a8b66.png",
+    "static/media/random-quote.png": "/portfolio/static/media/random-quote.9095368fbe3f520b88df.png",
+    "static/media/marckdown-previewer.png": "/portfolio/static/media/marckdown-previewer.944c0f62fca612a41eef.png",
+    "static/media/clock.png": "/portfolio/static/media/clock.7134e94446873fcc8685.png",
+    "static/media/calculator.png": "/portfolio/static/media/calculator.179198a0229eade67f4a.png",
+    "index.html": "/portfolio/index.html",
+    "main.1e411780.css.map": "/portfolio/static/css/main.1e411780.css.map",
+    "main.a431a17c.js.map": "/portfolio/static/js/main.a431a17c.js.map",
+    "787.1ed0c42c.chunk.js.map": "/portfolio/static/js/787.1ed0c42c.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.1e411780.css",
+    "static/js/main.a431a17c.js"
+  ]
+}
