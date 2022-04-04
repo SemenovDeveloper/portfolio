@@ -120,6 +120,26 @@ body {
   color: #8e7dbe;
   transform: rotate(0deg); }
 
+#mobile-navbar {
+  width: 100vw;
+  height: 50px;
+  display: flex;
+  color: #ffffff;
+  background: #d88c9a;
+  background: linear-gradient(270deg, #d88c9a 0%, #f1e3d3 33%, #99c1b9 66%, #8e7dbe 100%); }
+  #mobile-navbar ul {
+    width: 100%;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center; }
+    #mobile-navbar ul li {
+      margin: 0 20px;
+      cursor: pointer; }
+    #mobile-navbar ul li:hover {
+      color: #302e2e; }
+
 #content {
   margin-top: 15vh;
   max-width: 840px;

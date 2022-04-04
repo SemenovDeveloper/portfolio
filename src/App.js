@@ -5,15 +5,27 @@ import Projects from "./Components/Projects";
 import Skills from "./Components/Skills";
 import Contacts from "./Components/Contacts";
 import NavBar from "./Components/NavBar";
+import NavBarForMobile from "./Components/NavBarForMobile";
 
 function App() {
-  const [content, setContent] = useState("about");
-  const [pervContent, setPervContent] = useState("");
-
+  const [content, setContent] = useState("about");  
+  const [pervContent, setPervContent] = useState(""); 
+  const [isMobile, setIsMobile] = useState(window.innerWidth < 992);
+  
   function changeContent(value) {
     setPervContent(content);
     setContent(value);
   }
+
+  //Сhanges layout depending on screen width 
+  const isMobileHanlder= () => {
+    const width = window.innerWidth;
+    setIsMobile(width < 992);
+  };
+  
+  useEffect(() => {
+    window.onresize = isMobileHanlder;
+  }, [])
 
   // Change body backround color when page content is changed
   useEffect(() => {
@@ -34,21 +46,23 @@ function App() {
 
   return (
     <div className="App">
-      <NavBar
-        content={content}
-        pervContent={pervContent}
-        changeContent={changeContent}
-      />
+      {isMobile
+        ? <NavBarForMobile changeContent={changeContent} />
+        : <NavBar
+            content={content}
+            pervContent={pervContent}
+            changeContent={changeContent}
+          />
+      }
       <div id="content">
-        {content === "about" ? (
-          <AboutMe />
-        ) : content === "projects" ? (
-          <Projects />
-        ) : content === "skills" ? (
-          <Skills />
-        ) : (
-          <Contacts />
-        )}
+        {content === "about" 
+          ? <AboutMe />
+          : content === "projects" 
+            ? <Projects />
+            : content === "skills" 
+              ? <Skills />
+              : <Contacts />
+        }
       </div>
     </div>
   );

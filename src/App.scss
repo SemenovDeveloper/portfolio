@@ -120,7 +120,30 @@ body {
   color: $purple;
   transform: rotate(0deg);
 }
-// navbar block end
+
+#mobile-navbar {
+  width: 100vw;
+  height: 50px;
+  display: flex;
+  color: $white;
+  background: $peach;
+  background: linear-gradient(270deg, $peach 0%, $almond 33%, $opal 66%, $purple 100%); 
+  ul {
+    width: 100%;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    li {
+      margin: 0 20px; 
+      cursor: pointer;      
+    }
+    li:hover {
+      color: $black;
+    }
+  }
+}
 
 // content block start
 #content {
