@@ -75,7 +75,7 @@ function Skills() {
       <h2>Currently working on:</h2>
       <p>
         Improving my skills in, and understanding of vanilla JavaScript and
-        React. Taking my first steps in Node.js.
+        React. Taking my first steps in Node.js and TypeScript.
       </p>
     </div>
   );

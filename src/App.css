@@ -12,6 +12,11 @@ body {
   align-items: center;
   font-size: 1.5rem; }
 
+.App {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; }
+
 .static-about {
   position: fixed;
   margin: 20px;
@@ -181,7 +186,7 @@ body {
   width: 400px;
   height: 400px;
   margin: 50px 5px;
-  perspective: 1000px;
+  perspective: 800px;
   cursor: pointer; }
 
 .project-item-inner {
@@ -324,14 +329,14 @@ body {
   transform: rotate(180deg); }
 
 @media (min-width: 992px) and (max-width: 1199.98px) {
-  #project-items {
+  .project-item {
     transform: scale(0.8); }
 
   #skills-page-wrapper {
     max-width: 640px; } }
 @media (min-width: 480px) and (max-width: 991px) {
   #content {
-    margin-top: 2vh;
+    margin: 20px auto;
     font-size: 1.5rem; }
 
   #projects-wrapper {
