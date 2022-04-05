@@ -36,7 +36,7 @@ body {
   cursor: pointer;
   z-index: 5;
   a {
-    font-size: 3.25vw;
+    font-size: 3.25rem;
     font-weight: 700;
   }
 }
@@ -181,13 +181,8 @@ body {
 #project-items {
   max-width: 932px;
   margin: 0 auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
   justify-content: center;
-  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   overflow: hidden;
 }
